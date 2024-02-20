@@ -7,7 +7,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        
+        cardo: ['Cardo', 'serif'],
+        raleway: ['Raleway', 'sans-serif'],
+        arsenal: ['Arsenal', 'sans-serif'],
       },
       animation: {
 
