@@ -7,11 +7,11 @@ import { Samples } from '../../components/Samples'
 
 const Landing = () => {
   return (
-    <div className='flex w-full min-h-screen justify-center'>
+    <div className='flex flex-col w-full min-h-screen justify-center'>
       <div id='background' className='absolute opacity-35 w-full h-full -z-10'></div>
       <Container id="hero">
         <div className='relative flex flex-col h-full w-full items-center gap-24'>
-          // <Navbar />
+          <Navbar />
           <div className='flex flex-col gap-12 h-full'>
             <h1 className='text-hero capitalize font-cardo tracking-tighter'>Your Brand Identity <strong className='text-navy-700 font-normal'>Begins Here.</strong></h1>
             <p className='text-md capitalize'>Captivating Stories, Captivating Audiences.</p>
