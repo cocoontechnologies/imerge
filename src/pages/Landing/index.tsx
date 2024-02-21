@@ -1,9 +1,9 @@
-import React from 'react'
+// import React from 'react'
 import { Navbar } from '../../components/Navbar'
 import { Container } from '../../components/Container'
 import { BsChevronDown } from "react-icons/bs";
 import { Samples } from '../../components/Samples'
-
+import { ParallaxScroll } from '../../components/ui/ParallaxScroll';
 
 const Landing = () => {
   return (
@@ -22,8 +22,8 @@ const Landing = () => {
       </Container>
       
       <Samples />
+      <ParallaxScroll />
     </div>
-    
   )
 }
 
