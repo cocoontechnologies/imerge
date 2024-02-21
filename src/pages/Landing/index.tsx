@@ -2,11 +2,12 @@ import React from 'react'
 import { Navbar } from '../../components/Navbar'
 import { Container } from '../../components/Container'
 import { BsChevronDown } from "react-icons/bs";
+import { Samples } from '../../components/Samples'
 
 
 const Landing = () => {
   return (
-    <div className='flex w-full min-h-screen justify-center'>
+    <div className='flex flex-col w-full min-h-screen justify-center'>
       <div id='background' className='absolute opacity-35 w-full h-full -z-10'></div>
       <Container id="hero">
         <Navbar />
@@ -25,7 +26,9 @@ const Landing = () => {
         <div className="absolute bottom-0 w-full content-[''] h-10 bg-gradient-to-t from-white-100 to-white-100/5"/>
       </Container>
       
+      <Samples />
     </div>
+    
   )
 }
 
