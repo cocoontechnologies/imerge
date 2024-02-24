@@ -4,9 +4,9 @@ const Container = ( {children, id}:{children:React.ReactNode, id:string} ) => {
   return (
     <section 
       id={id} 
-      className='relative flex w-full justify-center pb-8 px-4 overflow-clip
-                 md:px-16 lg:flex-col lg:items-center'>
-        { children }
+      className='box-border relative flex w-full h-screen min-h-screen max-h-[110vh] justify-center pb-8 px-4 overflow-clip
+                 tablet:px-16 laptop:flex-col laptop:items-center'>
+      { children }
     </section>
   )
 }

@@ -1,8 +1,6 @@
-import React from 'react'
-
 const MenuButton = () => {
   return (
-    <button className='w-7 self-end lg:hidden'>
+    <button className='w-7 self-end laptop:hidden'>
         <svg className='hamburger' viewBox="0 0 20 18" fill="#03090c">
             <rect className='top'
                   width={20} height={2}
