@@ -7,19 +7,24 @@ const ParallaxScroll = () => {
     const gridRef = useRef<any>(null);
     const scrollProgress = useMotionValue(0);
 
-    const translateFirst = useTransform(scrollProgress, [0, 1], [0, -200]);
-    const translateSecond = useTransform(scrollProgress, [0, 1], [0, 50]);
-    const translateThird = useTransform(scrollProgress, [0, 1], [0, -200]);
+    const translateFirst = useTransform(scrollProgress, [0, 1], [0, -100]);
+    const translateSecond = useTransform(scrollProgress, [0, 1], [0, 100]);
+    const translateThird = useTransform(scrollProgress, [0, 1], [0, -100]);
+
 
     useLayoutEffect(() => {
         const windowHeight = window.innerHeight;
         const documentHeight = document.body.scrollHeight;
+        
         const handleScroll = () => {
-            const scrollValue = window.scrollY / (documentHeight - windowHeight);
-            scrollProgress.set(scrollValue);
+            if (window.scrollY > 500) {
+                const scrollValue = window.scrollY / (documentHeight - windowHeight);
+                scrollProgress.set(scrollValue);
+            }
         };
 
         handleScroll();
+        
         window.addEventListener('scroll', handleScroll);
 
         return () => {
@@ -46,7 +51,7 @@ const ParallaxScroll = () => {
     const thirdPart = sampleImages.slice(2 * third);
 
     return (
-        <div className={cn("h-[40rem] items-start w-full")}>
+        <div className={cn("hidden laptop:block h-[40rem] items-start w-full")}>
             <div
                 className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start  max-w-5xl mx-auto gap-10 py-40 px-10"
                 ref={gridRef}
