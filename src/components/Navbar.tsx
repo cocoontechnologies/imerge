@@ -1,4 +1,4 @@
-import MenuButton from './MenuButton'
+import { MenuButton } from './MenuButton'
 
 const Navbar = () => {
   return (
@@ -16,4 +16,4 @@ const Navbar = () => {
   )
 }
 
-export {Navbar}
+export { Navbar }

@@ -1,7 +1,15 @@
 export const imergeData = {
     "services": [
         {
-            "serviceName": "Hard Copy Company Profile",
+            "serviceName": "Company Profile",
+            "description": "High-quality labels are designed to be on-brand, supplied in a variety of formats to suit different needs and meet industry requirements."
+        },
+        {
+            "serviceName": "Logo Design",
+            "description": "High-quality labels are designed to be on-brand, supplied in a variety of formats to suit different needs and meet industry requirements."
+        },
+        {
+            "serviceName": "Pitchdeck Presentation",
             "description": "High-quality labels are designed to be on-brand, supplied in a variety of formats to suit different needs and meet industry requirements."
         },
         {
@@ -9,22 +17,22 @@ export const imergeData = {
             "description": "High-quality labels are designed to be on-brand, supplied in a variety of formats to suit different needs and meet industry requirements."
         },
         {
-            "serviceName": "Brochures",
+            "serviceName": "Calling Cards",
             "description": "High-quality labels are designed to be on-brand, supplied in a variety of formats to suit different needs and meet industry requirements."
         },
         {
-            "serviceName": "Business Cards",
+            "serviceName": "Letterhead",
             "description": "High-quality labels are designed to be on-brand, supplied in a variety of formats to suit different needs and meet industry requirements."
         },
         {
-            "serviceName": "Company Profile Design",
+            "serviceName": "Facebook Page",
             "description": "High-quality labels are designed to be on-brand, supplied in a variety of formats to suit different needs and meet industry requirements."
         }
     ],
 
     "companyStatement": {
-        "mission": "To revolutionize branding through innovative design solutions, driving success and leaving a lasting imprint. We are dedicated to crafting memorable brand experiences, forging connections, and shaping impactful narratives for a brighter tomorrow.",
-        "vision": "To redefine the possibilities of design, pioneering innovation and creativity to enrich lives globally. We envision a world where design transcends boundaries, igniting imagination and driving positive change in every aspect of life."
+        "mission": "iMerge Graphics Design Services aims to help both new and established businesses in advertising and promoting their products or services, as well as emerging in industry markets through providing high-quality, exceptional, and visually attractive graphic designs for their marketing materials.",
+        "vision": "iMerge Graphics Design Services envisions a future in which it will be the number one choice for graphic design and printing. As the company grows, it sees potential to expand into the advertising industry. With a commitment to excellence and boundless creativity, iMerge Graphics Design Services aspires to set new industry standards, gaining recognition for its outstanding service and unique solutions."
     },
 
     "footer": {

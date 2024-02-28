@@ -19,4 +19,4 @@ const MenuButton = () => {
   )
 }
 
-export default MenuButton
+export { MenuButton }

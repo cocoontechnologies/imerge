@@ -1,5 +1,7 @@
 // import React from 'react'
 "use client";
+import { Container } from "./section/Container";
+import { Heading } from "./section/Heading";
 import { ParallaxScroll } from "./ui/ParallaxScroll";
 
 const Samples = () => {
@@ -16,14 +18,12 @@ const Samples = () => {
     ];
 
     return (
+      <Container id="samples">
         <div>
-            <div className='flex flex-col justify-center items-center gap-6 font-cardo'>
-                <div className='text-sm'>01 - Samples</div>
-                <div className='text-2xl text-center leading-none'>See what we can <br /> do for you</div>
-            </div>
-
-            <ParallaxScroll images={sampleImages} />;
+          <Heading title="01 - Samples" firstLine="See what we can" secondLine="do for you" />
+        <ParallaxScroll images={sampleImages} />
         </div>
+      </Container>
     )
 }
 
