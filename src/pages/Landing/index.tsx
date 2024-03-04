@@ -1,7 +1,9 @@
+// import React from 'react'
 import { Navbar } from '../../components/Navbar'
 import { Container } from '../../components/section/Container'
 import { BsChevronDown } from "react-icons/bs"
 import { Samples } from '../../components/Samples'
+import { ParallaxScroll } from '../../components/ui/ParallaxScroll';
 import { Services } from '../../components/Services'
 
 
@@ -44,6 +46,7 @@ const Landing = () => {
         </Container>
       
         <Samples />
+        <ParallaxScroll />
         <Services />
     </div>
   )
