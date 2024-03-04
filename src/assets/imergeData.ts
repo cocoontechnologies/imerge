@@ -1,4 +1,16 @@
 export const imergeData = {
+    "samples": {
+        "sampleImageOne": "samples/sample_1.png",
+        "sampleImageTwo": "samples/sample_2.png",
+        "sampleImageThree": "samples/sample_3.png",
+        "sampleImageFour": "samples/sample_4.png",
+        "sampleImageFive": "samples/sample_5.png",
+        "sampleImageSix": "samples/sample_6.png",
+        "sampleImageSeven": "samples/sample_7.png",
+        "sampleImageEight": "samples/sample_8.png",
+        "sampleImageNine": "samples/sample_9.png"
+    },
+
     "services": [
         {
             "serviceName": "Hard Copy Company Profile",

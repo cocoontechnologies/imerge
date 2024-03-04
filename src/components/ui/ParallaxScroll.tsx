@@ -2,6 +2,7 @@ import { useTransform } from "framer-motion";
 import { useRef, useLayoutEffect } from "react";
 import { useMotionValue, motion } from "framer-motion";
 import { cn } from "../../utils/cn";
+import { imergeData } from "../../assets/imergeData";
 
 const ParallaxScroll = () => {
     const gridRef = useRef<any>(null);
@@ -32,17 +33,9 @@ const ParallaxScroll = () => {
         };
     }, [scrollProgress]);
 
-    const sampleImages = [
-        "samples/sample_1.png",
-        "samples/sample_2.png",
-        "samples/sample_3.png",
-        "samples/sample_4.png",
-        "samples/sample_5.png",
-        "samples/sample_6.png",
-        "samples/sample_7.png",
-        "samples/sample_8.png",
-        "samples/sample_9.png",
-    ];
+    const samples = imergeData.samples;
+
+    const sampleImages = Object.values(samples);
 
     const third = Math.ceil(sampleImages.length / 3);
 
