@@ -21,3 +21,7 @@ html {
     background-size: contain;
     scale: 1.1;
 }
+
+.smooth-scroll {
+    transition: transform 0.2s ease;
+}

@@ -8,7 +8,7 @@ const ParallaxScroll = () => {
     const gridRef = useRef<any>(null);
     const scrollProgress = useMotionValue(0);
 
-    const translateFirst = useTransform(scrollProgress, [0, 1], [0, -100]);
+    const translateFirst = useTransform(scrollProgress, [0, 1], [0, -200]);
     const translateSecond = useTransform(scrollProgress, [0, 1], [0, 100]);
     const translateThird = useTransform(scrollProgress, [0, 1], [0, -100]);
 
@@ -16,12 +16,18 @@ const ParallaxScroll = () => {
     useLayoutEffect(() => {
         const windowHeight = window.innerHeight;
         const documentHeight = document.body.scrollHeight;
+        console.log("windowHeight: ", windowHeight);
+        console.log("documetHeight: ", documentHeight);
         
         const handleScroll = () => {
-            if (window.scrollY > 500) {
-                const scrollValue = window.scrollY / (documentHeight - windowHeight);
-                scrollProgress.set(scrollValue);
-            }
+            // if (window.scrollY > 500) {
+            //     const scrollValue = window.scrollY / (documentHeight - windowHeight);
+            //     scrollProgress.set(scrollValue);
+            //     console.log("scrollValue: ", scrollValue);
+            // }
+            const scrollY = window.scrollY;
+            const scrollValue = scrollY / (documentHeight - windowHeight);
+            scrollProgress.set(scrollValue);
         };
 
         handleScroll();
@@ -51,7 +57,7 @@ const ParallaxScroll = () => {
             >
                 <div className="grid gap-10">
                     {firstPart.map((el, idx) => (
-                        <motion.div style={{ y: translateFirst }} key={"grid-1" + idx} className="gap-x-4 rounded-md bg-[#ffff] p-4 pb-2 shadow">
+                        <motion.div style={{ y: translateFirst }} key={"grid-1" + idx} className="gap-x-4 rounded-md bg-[#ffff] p-4 pb-2 shadow smooth-scroll">
                             <img
                                 src={el}
                                 className="h-100 w-full object-cover object-left-top gap-10 !m-0 !p-0 border border-[#111111]"
@@ -63,7 +69,7 @@ const ParallaxScroll = () => {
                 </div>
                 <div className="grid gap-10">
                     {secondPart.map((el, idx) => (
-                        <motion.div style={{ y: translateSecond }} key={"grid-2" + idx} className="gap-x-4 rounded-md bg-[#ffff] p-4 pb-2 shadow">
+                        <motion.div style={{ y: translateSecond }} key={"grid-2" + idx} className="gap-x-4 rounded-md bg-[#ffff] p-4 pb-2 shadow smooth-scroll">
                             <img
                                 src={el}
                                 className="h-100 w-full object-cover object-left-top gap-10 !m-0 !p-0 border border-[#111111]"
@@ -75,7 +81,7 @@ const ParallaxScroll = () => {
                 </div>
                 <div className="grid gap-10">
                     {thirdPart.map((el, idx) => (
-                        <motion.div style={{ y: translateThird }} key={"grid-3" + idx} className="gap-x-4 rounded-md bg-[#ffff] p-4 pb-2 shadow">
+                        <motion.div style={{ y: translateThird }} key={"grid-3" + idx} className="gap-x-4 rounded-md bg-[#ffff] p-4 pb-2 shadow smooth-scroll">
                             <img
                                 src={el}
                                 className="h-100 w-full object-cover object-left-top gap-10 !m-0 !p-0 border border-[#111111]"
