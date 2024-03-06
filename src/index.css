@@ -8,6 +8,10 @@ html {
     background-color: #fafafa;
 }
 
+* {
+    /* border:red 1px solid !important; */
+}
+
 #background {
     background-image: url('/grain.png');
     filter: opacity(0.6);

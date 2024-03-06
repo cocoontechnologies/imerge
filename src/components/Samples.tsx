@@ -15,7 +15,7 @@ const Samples = () => {
     const sampleImages = Object.values(samples);
 
     return (
-        <Container id="samples" className="flex-col md:px-0 gap-10">
+        <Container id="samples" className="flex-col tablet:px-0 gap-10 laptop:pb-0">
             <Heading title="01 - Samples" firstLine="See what we can" secondLine="do for you" />
 
             <div className="block laptop:hidden h-[900px]">
