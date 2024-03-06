@@ -1,12 +1,12 @@
 import React from 'react'
+import { twMerge } from 'tailwind-merge'
 
-const Container = ( {children, id}:{children:React.ReactNode, id:string} ) => {
+const Container = ( {children, id, className}:{children:React.ReactNode, id:string, className?:string} ) => {
   return (
     <section 
       id={id} 
-      className='box-border relative flex w-full min-h-full justify-center pb-8 px-4 overflow-clip
-                 tablet:px-16 laptop:flex-col laptop:items-center'>
-      { children }
+      className={twMerge('relative flex w-full justify-center pb-8 px-4 overflow-clip md:px-16 lg:flex-col lg:items-center scroll-mt-40', className )}>
+        { children }
     </section>
   )
 }

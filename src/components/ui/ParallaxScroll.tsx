@@ -50,7 +50,7 @@ const ParallaxScroll = () => {
     const thirdPart = sampleImages.slice(2 * third);
 
     return (
-        <div className={cn("hidden laptop:block h-[40rem] items-start w-full")}>
+        <div className={cn("hidden laptop:block min-h-[40rem] items-start w-full")}>
             <div
                 className="grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 items-start  max-w-5xl mx-auto gap-10 py-40"
                 ref={gridRef}

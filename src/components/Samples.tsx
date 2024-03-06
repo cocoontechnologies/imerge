@@ -1,8 +1,9 @@
 import { imergeData } from "../assets/imergeData"
-import { Container } from "./Container"
+import { Container } from "./section/Container"
 import { Swiper, SwiperSlide } from "swiper/react"
 import { FreeMode, Pagination } from "swiper/modules"
 import { Heading } from "./section/Heading";
+import { ParallaxScroll } from "./ui/ParallaxScroll";
 import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/free-mode'
@@ -14,7 +15,7 @@ const Samples = () => {
     return (
         <Container id="samples" className="flex-col tablet:px-0 gap-10 laptop:pb-0">
             <Heading title="01 - Samples" firstLine="See what we can" secondLine="do for you" />
-
+            <ParallaxScroll />
             <div className="block laptop:hidden h-[900px]">
                 <Swiper
                     breakpoints={{
