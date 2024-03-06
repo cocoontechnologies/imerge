@@ -1,14 +1,17 @@
 export const imergeData = {
     "samples": {
-        "sampleImageOne": "samples/sample_1.png",
-        "sampleImageTwo": "samples/sample_2.png",
-        "sampleImageThree": "samples/sample_3.png",
-        "sampleImageFour": "samples/sample_4.png",
-        "sampleImageFive": "samples/sample_5.png",
-        "sampleImageSix": "samples/sample_6.png",
-        "sampleImageSeven": "samples/sample_7.png",
-        "sampleImageEight": "samples/sample_8.png",
-        "sampleImageNine": "samples/sample_9.png"
+        "sampleImageOne": "samples/sample_1.webp",
+        "sampleImageTwo": "samples/sample_2.webp",
+        "sampleImageThree": "samples/sample_3.webp",
+        "sampleImageFour": "samples/sample_4.webp",
+        "sampleImageFive": "samples/sample_5.webp",
+        "sampleImageSix": "samples/sample_6.webp",
+        "sampleImageSeven": "samples/sample_7.webp",
+        "sampleImageEight": "samples/sample_8.webp",
+        "sampleImageNine": "samples/sample_9.webp",
+        "sampleImageTen": "samples/sample_10.webp",
+        "sampleImageEleven": "samples/sample_11.webp",
+        "sampleImageTwelve": "samples/sample_12.webp",
     },
 
     "services": [
