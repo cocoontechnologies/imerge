@@ -33,8 +33,8 @@ const Hero = () => {
           className="-z-20 absolute -rotate-[19deg] flex items-center justify-center w-full h-full -bottom-[12rem] -right-4 scale-150
           sm:-bottom-[20rem] 
           tablet:scale-110
-          laptop:scale-100 laptop:-bottom-[18rem] laptop:-right-[28rem]
-          hd:scale-[1.4] hd:-bottom-[25rem] hd:-right-[32rem]"/>
+          laptop:scale-100 laptop:-bottom-[16rem] laptop:-right-[24rem]
+          desktop:scale-[1.2] desktop:-bottom-[24rem] desktop:-right-[28rem]"/>
       <div className="absolute -bottom-2 w-full h-12 bg-gradient-to-t from-white-100 to-white-100/0"/>
     </Container>
   )

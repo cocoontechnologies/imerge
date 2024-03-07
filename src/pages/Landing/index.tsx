@@ -1,6 +1,7 @@
 // import React from 'react'
 import { Footer } from '../../components/Footer'
 import { Hero } from '../../components/Hero'
+import { MissionVision } from '../../components/MissionVision'
 import { Samples } from '../../components/Samples'
 import { Services } from '../../components/Services'
 
@@ -12,6 +13,7 @@ const Landing = () => {
         <Hero />
         <Samples />
         <Services />
+        <MissionVision />
         <Footer />
     </div>
   )
