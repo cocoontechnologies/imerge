@@ -4,7 +4,7 @@ import { BsChevronDown } from "react-icons/bs"
 
 const Hero = () => {
   return (
-    <Container id="hero">
+    <Container id="hero" className='mb-12'>
       <Navbar />
         <div className='flex flex-col h-screen w-full items-center pt-24'>
           <div className='flex flex-col gap-2 w-full h-full laptop:gap-12 laptop:mt-28 laptop:font-normal'>
@@ -26,7 +26,7 @@ const Hero = () => {
             </h1>
             <p className='capitalize text-xs tablet:text-sm laptop:text-base desktop:text-md'>Captivating Stories, Captivating Audiences.</p>
           </div>
-          <button className='inline-flex text-base gap-2 items-center laptop:self-start laptop:mb-10'><div className='border border-black-100 rounded-full p-1 flex justify-center items-center'><BsChevronDown/></div><p className='hidden laptop:inline'>Scroll Down</p></button>
+          <a href="#samples" className='inline-flex text-base gap-2 items-center laptop:self-start laptop:mb-10 scroll-m-'><div className='border border-black-100 rounded-full p-1 flex justify-center items-center'><BsChevronDown/></div><p className='hidden laptop:inline'>Scroll Down</p></a>
         </div>
         <div 
           id="heroBrochure" 
