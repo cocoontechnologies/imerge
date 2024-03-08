@@ -38,7 +38,7 @@ const Samples = () => {
                     className="w-[100%]"
                 >
                     {sampleImages.map((image, index) => (
-                        <SwiperSlide key={index} className="rounded-md bg-[#ffff] p-4 pb-2 shadow mb-10 h-[70vh] overflow-clip">
+                        <SwiperSlide key={index} className="rounded-md bg-[#ffff] p-4 pb-2 shadow mb-10 h-[70vh] overflow-cover">
                             <img 
                                 src={image} 
                                 className="h-full aspect-[9/16] object-cover object-left-top !m-0 !p-0 border border-[#111111]"
