@@ -16,15 +16,8 @@ const ParallaxScroll = () => {
     useLayoutEffect(() => {
         const windowHeight = window.innerHeight;
         const documentHeight = document.body.scrollHeight;
-        console.log("windowHeight: ", windowHeight);
-        console.log("documetHeight: ", documentHeight);
         
         const handleScroll = () => {
-            // if (window.scrollY > 500) {
-            //     const scrollValue = window.scrollY / (documentHeight - windowHeight);
-            //     scrollProgress.set(scrollValue);
-            //     console.log("scrollValue: ", scrollValue);
-            // }
             const scrollY = window.scrollY;
             const scrollValue = scrollY / (documentHeight - windowHeight);
             scrollProgress.set(scrollValue);

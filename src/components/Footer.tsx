@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <Container id="contact" className="bg-[#6895AB] w-full">
         <div id='background' className='absolute opacity-35 w-full h-full -z-1'></div>
-        <div className="flex flex-col justify-center items-start laptop:items-center gap-4 w-full pt-6 pb-0 laptop:py-20 font-arsenal text-[#fafafa]">
+        <div className="flex flex-col justify-center items-start laptop:items-center gap-4 w-full pt-6 pb-0 laptop:py-20 font-arsenal text-white-100">
             <div className="flex flex-col laptop:items-center gap-1 w-full">
                 <div className="text-sm laptop:text-md">Got a project?</div>
                 <div className="">
