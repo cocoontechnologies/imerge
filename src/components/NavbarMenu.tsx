@@ -16,7 +16,7 @@ const NavbarMenu = ({ onClose }: { onClose: () => void }) => {
 		setIsOpen(false);
 		setTimeout(() => {
 			onClose();
-		}, 300);
+		}, 1000);
 	};
 
 	return (
@@ -30,7 +30,7 @@ const NavbarMenu = ({ onClose }: { onClose: () => void }) => {
 				</div>
 
 				<div className="flex flex-col gap-6">
-					<a href="#hero" onClick={closeNavbarMenu} className={'transform hover:translate-x-5 duration-1000 ease-in-out  '}>Home</a>
+					<a href="#hero" onClick={closeNavbarMenu} className='transform hover:translate-x-5 duration-1000 ease-in-out'>Home</a>
 					<a href="#samples" onClick={closeNavbarMenu} className="transform hover:translate-x-5 duration-1000 ease-in-out">Samples</a>
 					<a href="#services" onClick={closeNavbarMenu} className="transform hover:translate-x-5 duration-1000 ease-in-out">Services</a>
 					<a href="#mission-vision" onClick={closeNavbarMenu} className="transform hover:translate-x-5 duration-1000 ease-in-out">Mission & Vision</a>
