@@ -16,7 +16,7 @@ const Hero = () => {
                         hd:text-hero'>
               Your Brand Identity
                 <strong 
-                  className='text-navy-700 block text-lg whitespace-nowrap
+                  className='text-navy-700 block text-xl whitespace-nowrap
                             tablet:text-2xl tablet:font-normal 
                             laptop:text-3xl
                             desktop:text-hero-l
@@ -26,7 +26,7 @@ const Hero = () => {
             </h1>
             <p className='capitalize text-xs tablet:text-sm laptop:text-base desktop:text-md'>Captivating Stories, Captivating Audiences.</p>
           </div>
-          <a href="#samples" className='inline-flex text-base gap-2 items-center laptop:self-start laptop:mb-10 scroll-m-'><div className='border border-black-100 rounded-full p-1 flex justify-center items-center'><BsChevronDown/></div><p className='hidden laptop:inline'>Scroll Down</p></a>
+          <a href="#samples" className='inline-flex text-base gap-2 items-center mb-5 laptop:self-start laptop:mb-10 scroll-m-'><div className='border border-black-100 rounded-full p-1 flex justify-center items-center'><BsChevronDown/></div><p className='hidden laptop:inline'>Scroll Down</p></a>
         </div>
         <div 
           id="heroBrochure" 

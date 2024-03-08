@@ -17,31 +17,31 @@ export const imergeData = {
     "services": [
         {
             "serviceName": "Company Profile",
-            "description": "High-quality labels are designed to be on-brand, supplied in a variety of formats to suit different needs and meet industry requirements."
+            "description": "Professionally crafted print material showcasing your business's essence, services, and past achievements."
         },
         {
             "serviceName": "Logo Design",
-            "description": "High-quality labels are designed to be on-brand, supplied in a variety of formats to suit different needs and meet industry requirements."
+            "description": "Tailored logo creation service to visually represent your brand's identity and values."
         },
         {
             "serviceName": "Pitchdeck Presentation",
-            "description": "High-quality labels are designed to be on-brand, supplied in a variety of formats to suit different needs and meet industry requirements."
+            "description": "Dynamic and visually appealing presentations designed to pitch your ideas, projects, or business propositions effectively."
         },
         {
             "serviceName": "Flyers",
-            "description": "High-quality labels are designed to be on-brand, supplied in a variety of formats to suit different needs and meet industry requirements."
+            "description": "Eye-catching promotional materials designed to grab attention and convey essential information about your products, services, or events succinctly."
         },
         {
             "serviceName": "Calling Cards",
-            "description": "High-quality labels are designed to be on-brand, supplied in a variety of formats to suit different needs and meet industry requirements."
+            "description": "Sleek and memorable business cards that make a lasting impression, featuring your contact details and brand identity for networking and professional interactions."
         },
         {
             "serviceName": "Letterhead",
-            "description": "High-quality labels are designed to be on-brand, supplied in a variety of formats to suit different needs and meet industry requirements."
+            "description": "Customized stationery imbued with your brand's aesthetics, ensuring consistency across all official communications and reinforcing your professional image."
         },
         {
             "serviceName": "Facebook Page",
-            "description": "High-quality labels are designed to be on-brand, supplied in a variety of formats to suit different needs and meet industry requirements."
+            "description": "Creating visually appealing cover and profile pictures that reflect your brand's personality and values, optimizing your social media presence for maximum impact and engagement."
         }
     ],
 
