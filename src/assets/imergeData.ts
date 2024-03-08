@@ -17,7 +17,7 @@ export const imergeData = {
     "services": [
         {
             "serviceName": "Company Profile",
-            "description": "Professionally crafted print material showcasing your business's essence, services, and past achievements."
+            "description": "Professionally crafted print material showcasing your business's essence, highlighting services offered, notable projects, and a snapshot of your expertise and accomplishments."
         },
         {
             "serviceName": "Logo Design",
