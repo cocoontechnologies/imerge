@@ -6,6 +6,11 @@
 
 html {
     background-color: #fafafa;
+    height: -webkit-fill-available;
+}
+
+body {
+    height: -webkit-fill-available;
 }
 
 * {
