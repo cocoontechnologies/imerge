@@ -9,7 +9,12 @@ const NavbarMenu = ({ onClose }: { onClose: () => void }) => {
 			setIsOpen(true);
 		}, 100);
 
-		return () => clearTimeout(timer);
+		document.body.style.overflow = 'hidden';
+
+		return () => {
+			clearTimeout(timer)
+			document.body.style.overflow = 'auto';
+		};
 	}, []);
 
 	const closeNavbarMenu = () => {

@@ -16,14 +16,12 @@ const Navbar = () => {
 			{!openMenu && <MenuButton onClick={toggleMenu} />} 
 
 			{/* <a className="hidden laptop:block font-raleway font-bold text-md" href="#">iMerge</a> */}
-			<a className="hidden laptop:block w-24" href="#">
-				<img src="/iMergeLogo.webp" alt="iMerge" />
-			</a>
-			<a className="hidden laptop:block" href="#hero">Home</a>
-			<a className="hidden laptop:block" href="#samples">Samples</a>
-			<a className="hidden laptop:block" href="#services">Services</a>
-			<a className="hidden laptop:block" href="#mission-vision">Mission & Vision</a>
-			<a className="hidden laptop:block" href="#contact">Contact</a>
+			<a className="hidden laptop:block w-24" href="#"> <img src="/iMergeLogo.webp" alt="iMerge" /> </a>
+			<a className="hidden laptop:block transform hover:text-md duration-300" href="#hero">Home</a>
+			<a className="hidden laptop:block transform hover:text-md duration-300" href="#samples">Samples</a>
+			<a className="hidden laptop:block transform hover:text-md duration-300" href="#services">Services</a>
+			<a className="hidden laptop:block transform hover:text-md duration-300" href="#mission-vision">Mission & Vision</a>
+			<a className="hidden laptop:block transform hover:text-md duration-300" href="#contact">Contact</a>
 
 			{openMenu && <NavbarMenu onClose={toggleMenu} />}
 		</div>
