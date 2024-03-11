@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { imergeData } from "../assets/imergeData"
 import { Container } from "./section/Container"
 import { Swiper, SwiperSlide } from "swiper/react"
@@ -11,6 +12,21 @@ import 'swiper/css/free-mode'
 const Samples = () => {
     const samples = imergeData.samples;
     const sampleImages = Object.values(samples);
+
+    useEffect(() => {
+        const setVhVariable = () => {
+            let vh = window.innerHeight * 0.01;
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
+        };
+
+        setVhVariable();
+
+        window.addEventListener('resize', setVhVariable);
+
+        return () => {
+            window.removeEventListener('resize', setVhVariable);
+        };
+    }, []);
 
     return (
         <Container id="samples" className="flex-col tablet:px-0 gap-10 laptop:pb-0">
@@ -38,7 +54,7 @@ const Samples = () => {
                     className="w-[100%]"
                 >
                     {sampleImages.map((image, index) => (
-                        <SwiperSlide key={index} className="rounded-md bg-[#ffff] p-4 pb-2 shadow mb-10 max-h-[70%] overflow-clip">
+                        <SwiperSlide key={index} className="rounded-md bg-[#ffff] p-4 pb-2 shadow mb-10 image-slider-container overflow-clip">
                             <img 
                                 src={image} 
                                 className="h-full aspect-[9/16] object-cover object-left-top !m-0 !p-0 border border-[#111111]"
